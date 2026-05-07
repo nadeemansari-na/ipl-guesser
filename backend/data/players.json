@@ -1,0 +1,167 @@
+[
+  {
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicketkeeper",
+    "battingStyle": "Right-handed",
+    "bowlingType": "None",
+    "teams": ["CSK", "RPS"],
+    "isCaptain": true,
+    "isActive": false,
+    "battingPosition": "Finisher"
+  },
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingType": "None",
+    "teams": ["RCB"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Top-order"
+  },
+  {
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingType": "None",
+    "teams": ["MI"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Top-order"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingType": "Fast",
+    "teams": ["MI"],
+    "isCaptain": false,
+    "isActive": true,
+    "battingPosition": "Tail"
+  },
+  {
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingType": "Medium Fast",
+    "teams": ["MI", "GT"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Middle-order"
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "role": "All-rounder",
+    "battingStyle": "Left-handed",
+    "bowlingType": "Spin",
+    "teams": ["CSK"],
+    "isCaptain": false,
+    "isActive": true,
+    "battingPosition": "Middle-order"
+  },
+  {
+    "name": "KL Rahul",
+    "country": "India",
+    "role": "Wicketkeeper",
+    "battingStyle": "Right-handed",
+    "bowlingType": "None",
+    "teams": ["LSG", "PBKS"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Top-order"
+  },
+  {
+    "name": "Rishabh Pant",
+    "country": "India",
+    "role": "Wicketkeeper",
+    "battingStyle": "Left-handed",
+    "bowlingType": "None",
+    "teams": ["DC"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Middle-order"
+  },
+  {
+    "name": "Andre Russell",
+    "country": "Overseas",
+    "role": "All-rounder",
+    "battingStyle": "Right-handed",
+    "bowlingType": "Fast",
+    "teams": ["KKR"],
+    "isCaptain": false,
+    "isActive": true,
+    "battingPosition": "Finisher"
+  },
+  {
+    "name": "David Warner",
+    "country": "Overseas",
+    "role": "Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingType": "None",
+    "teams": ["SRH", "DC"],
+    "isCaptain": true,
+    "isActive": true,
+    "battingPosition": "Top-order"
+  },
+  {
+    "name": "AB de Villiers",
+    "country": "Overseas",
+    "role": "Batsman",
+    "battingStyle": "Right-handed",
+    "bowlingType": "None",
+    "teams": ["RCB"],
+    "isCaptain": false,
+    "isActive": false,
+    "battingPosition": "Middle-order"
+  },
+  {
+    "name": "Chris Gayle",
+    "country": "Overseas",
+    "role": "Batsman",
+    "battingStyle": "Left-handed",
+    "bowlingType": "None",
+    "teams": ["RCB", "PBKS"],
+    "isCaptain": false,
+    "isActive": false,
+    "battingPosition": "Top-order"
+  },
+  {
+    "name": "Lasith Malinga",
+    "country": "Overseas",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingType": "Fast",
+    "teams": ["MI"],
+    "isCaptain": false,
+    "isActive": false,
+    "battingPosition": "Tail"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Overseas",
+    "role": "Bowler",
+    "battingStyle": "Right-handed",
+    "bowlingType": "Spin",
+    "teams": ["SRH", "GT"],
+    "isCaptain": false,
+    "isActive": true,
+    "battingPosition": "Tail"
+  },
+  {
+    "name": "Sunil Narine",
+    "country": "Overseas",
+    "role": "All-rounder",
+    "battingStyle": "Left-handed",
+    "bowlingType": "Spin",
+    "teams": ["KKR"],
+    "isCaptain": false,
+    "isActive": true,
+    "battingPosition": "Top-order"
+  }
+]
