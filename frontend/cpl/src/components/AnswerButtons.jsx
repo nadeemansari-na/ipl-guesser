@@ -27,7 +27,7 @@ export default function AnswerButtons({ onAnswer }) {
             whileTap={{ scale: 0.95 }}
           key={btn.value}
           onClick={() => onAnswer(btn.value)}
-          className={`rounded-2xl bg-gradient-to-r ${btn.style} px-6 py-4 text-lg font-bold shadow-lg transition`}
+          className={`rounded-2xl bg-linear-to-r ${btn.style} cursor-pointer  px-6 py-4 text-lg font-bold shadow-lg transition`}
         >
           {btn.label}
         </motion.button>

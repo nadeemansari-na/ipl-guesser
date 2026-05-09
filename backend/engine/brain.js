@@ -4,7 +4,7 @@ const players=JSON.parse(
     fs.readFileSync(new URL("../data/players.json", import.meta.url))
 )
 import questions from "../data/questions.js"
-import { ai } from "../utils/gemini.js";
+import { ai } from "../Ai/gemini.js";
 
 
 let playersState = [];
@@ -132,7 +132,10 @@ function getBestQuestion(players, questions, asked) {
       best = q;
     }
   });
-  return best;
+  return {
+    best,
+    confidence:bestScore
+  };
 }
 
 

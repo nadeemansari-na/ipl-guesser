@@ -19,13 +19,16 @@ export default function ResultModal({ player, confidence, onClose }) {
         <p className="mt-5 text-lg text-gray-300">
           Confidence Score: 
           <span className="font-bold text-cyan-400">
-            {confidence}%
+            {Math.floor(confidence*100)}%
           </span>
         </p>
 
         <button
-          onClick={onClose}
-            className="mt-10 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-bold transition hover:scale-105"
+          onClick={()=>{
+            onClose
+            window.location.reload()
+          }}
+            className="mt-10 rounded-2xl bg-linear-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-bold transition hover:scale-105"
         >
           Play Again
         </button>

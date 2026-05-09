@@ -49,14 +49,16 @@ export default function Landing() {
         <div className="mt-12 flex flex-col gap-4 sm:flex-row">
           <Link
             to="/game"
-            className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-semibold shadow-lg shadow-cyan-500/20 transition duration-300 hover:scale-105 hover:shadow-cyan-500/40"
+            className="rounded-2xl bg-linear-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-semibold shadow-lg shadow-cyan-500/20 transition duration-300 hover:scale-105 hover:shadow-cyan-500/40"
           >
             Start Guessing
           </Link>
 
-          <button className="rounded-2xl border border-white/10 bg-white/5 px-8 py-4 text-lg font-semibold backdrop-blur-md transition hover:scale-105 hover:bg-white/10">
+            <Link to={"/How-it-work"}>
+          <button className="rounded-2xl border cursor-pointer border-white/10 bg-white/5 px-8 py-4 text-lg font-semibold backdrop-blur-md transition hover:scale-105 hover:bg-white/10">
             How It Works
           </button>
+            </Link>
         </div>
 
         {/* Feature Cards */}
@@ -88,7 +90,7 @@ export default function Landing() {
       </main>
 
       {/* Bottom Line */}
-      <div className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-40" />
+      <div className="absolute bottom-0 left-0 h-[2px] w-full bg-linear-to-r from-transparent via-cyan-400 to-transparent opacity-40" />
     </div>
   );
 }

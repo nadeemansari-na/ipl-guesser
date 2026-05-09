@@ -9,7 +9,7 @@ export default function ConfidenceBar({ confidence }) {
       <div className="h-4 overflow-hidden rounded-full bg-white/10">
         <div
           style={{ width: `${confidence}%` }}
-          className="h-full rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-500"
+          className="h-full rounded-full bg-linear-to-r from-cyan-400 to-blue-500 transition-all duration-500"
         />
       </div>
     </div>

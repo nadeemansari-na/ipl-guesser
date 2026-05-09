@@ -7,9 +7,10 @@ import { askedhistory, explainGuess, generateQuestionText, initGame,processAnswe
 router.get("/start",async (req,res)=>{
     const firstquestion=initGame()
     console.log(firstquestion)
-    const text= await generateQuestionText(firstquestion)
+    const text= await generateQuestionText(firstquestion.best)
     res.json({
-        question:firstquestion,
+        question:firstquestion.best,
+        confidence:firstquestion.confidence,
         text:text
     })
 })
@@ -31,14 +32,15 @@ router.post("/answer",async (req,res)=>{
         })
     }
     console.log(result.nextQuestion)
-    const text= await generateQuestionText(result.nextQuestion);
+    const text= await generateQuestionText(result.nextQuestion.best);
 
     res.json({
         done:false,
         nextQuestion:{
-            id:result.nextQuestion.id,
-            text:text
-        }
+            question:result.nextQuestion.best
+            // question:text
+        },
+        confidence:result.nextQuestion.confidence
     })
 
     // res.json(result);
