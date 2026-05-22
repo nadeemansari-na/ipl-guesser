@@ -13,7 +13,7 @@ export const  Work_Flow=()=>{
 
     <h2 className="text-4xl font-black md:text-5xl">
       How It
-      <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+      <span className="bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
         {" "}Works
       </span>
     </h2>
@@ -84,7 +84,7 @@ export const  Work_Flow=()=>{
   </div>
 
   {/* Probability Engine Box */}
-  <div className="mt-16 rounded-3xl border border-cyan-400/10 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 p-10 backdrop-blur-md">
+  <div className="mt-16 rounded-3xl border border-cyan-400/10 bg-linear-to-r from-cyan-500/10 to-purple-500/10 p-10 backdrop-blur-md">
     
     <div className="flex flex-col items-center text-center">
       <Brain className="h-14 w-14 text-cyan-400" />

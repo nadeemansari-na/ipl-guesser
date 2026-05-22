@@ -35,7 +35,7 @@ export default function Landing() {
         {/* Main Heading */}
         <h1 className="max-w-5xl text-5xl font-black leading-tight md:text-7xl">
           Think Of Any
-          <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
             {" "}IPL Cricketer
           </span>
         </h1>
@@ -90,7 +90,7 @@ export default function Landing() {
       </main>
 
       {/* Bottom Line */}
-      <div className="absolute bottom-0 left-0 h-[2px] w-full bg-linear-to-r from-transparent via-cyan-400 to-transparent opacity-40" />
+      <div className="absolute bottom-0 left-0 h-0.5 w-full bg-linear-to-r from-transparent via-cyan-400 to-transparent opacity-40" />
     </div>
   );
 }
