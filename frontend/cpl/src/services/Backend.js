@@ -1,1 +1,1 @@
-export const Backend_Url="https://ipl-guesser.onrender.com"
+export const Backend_Url="http://localhost:3000"

@@ -52,6 +52,7 @@ export default function Game() {
       }
       else{
         setAnswerResult(data)
+        setShowResult(true)
         setConfidence(Math.floor(data.confidence*100))
       }
       //  setConfidence((prev) => Math.min(prev + 12, 100));
