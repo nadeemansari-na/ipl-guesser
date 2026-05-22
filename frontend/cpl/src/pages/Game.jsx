@@ -47,6 +47,7 @@ export default function Game() {
       const data =await sendAnswer(question.id,answer)
       if(!data.done){
         setQuestion(data.nextQuestion.question)
+        console.log("confidence :",(data.confidence*100))
         setConfidence(Math.floor(data.confidence*100))
       }
       else{

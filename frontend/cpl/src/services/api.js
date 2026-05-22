@@ -1,17 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useQuestionProvider } from "../context/question";
+import { Backend_Url } from "./Backend";
 
-// const API = axios.create({
-//   baseURL: "http://localhost:5173/api/game",
-// });
+
 
 // Start New Game
 export const startGame =async () => { 
 
 
         try {
-          const response = await axios.get("http://localhost:3000/api/game/start");
+          const response = await axios.get(`${Backend_Url}/api/game/start`);
           console.log(response.data.question)
                 return response.data
         } catch (error) {
@@ -25,7 +24,7 @@ export const startGame =async () => {
 export const sendAnswer = async (questionId, answer) => {
 
       try {
-        const response = await axios.post("http://localhost:3000/api/game/answer", {
+        const response = await axios.post(`${Backend_Url}/api/game/answer`, {
           questionId,
           answer,
         });

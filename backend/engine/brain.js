@@ -46,14 +46,15 @@ export async function processAnswer(questionId, answer) {
       guess: topPlayer.name,
       confidence: topPlayer.probability
     };
-  }else if(topPlayer.probability<0.4 && askedQuestions.length>=5){
-    const aiGuess= await askGeminiToGuess(playersState);
-    return {
-        done:true,
-        guess:aiGuess,
-        ai:true
-    }
   }
+  // else if(topPlayer.probability<0.4 && askedQuestions.length>=5){
+  //   const aiGuess= await askGeminiToGuess(playersState);
+  //   return {
+  //       done:true,
+  //       guess:aiGuess,
+  //       ai:true
+  //   }
+  // }
 
   return {
     done: false,
