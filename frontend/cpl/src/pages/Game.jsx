@@ -95,7 +95,7 @@ export default function Game() {
         </div>
 
         {/* Right Panel */}
-        <div className="mt-10 w-full lg:mt-0 lg:w-[380px]">
+        <div className="mt-10 w-full lg:mt-0 lg:w-95">
           <HistoryPanel history={history} />
         </div>
       </div>

@@ -39,8 +39,9 @@ export async function processAnswer(questionId, answer) {
 
   const sorted = [...playersState].sort((a, b) => b.probability - a.probability);
   const topPlayer = sorted[0];
-
+  console.log("topplayer probability:",topPlayer.probability)
   if (topPlayer.probability > 0.8 || askedQuestions.length >= 10) {
+    console.log("before end")
     return {
       done: true,
       guess: topPlayer.name,
@@ -58,7 +59,8 @@ export async function processAnswer(questionId, answer) {
 
   return {
     done: false,
-    nextQuestion: getNextQuestion()
+    nextQuestion: getNextQuestion(),
+    confidence: topPlayer.probability
   };
 }
 
@@ -134,8 +136,7 @@ function getBestQuestion(players, questions, asked) {
     }
   });
   return {
-    best,
-    confidence:bestScore
+    best
   };
 }
 

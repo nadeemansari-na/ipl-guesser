@@ -40,7 +40,7 @@ router.post("/answer",async (req,res)=>{
             question:result.nextQuestion.best
             // question:text
         },
-        confidence:result.nextQuestion.confidence
+        confidence:result.confidence
     })
 
     // res.json(result);

@@ -28,7 +28,6 @@ export const sendAnswer = async (questionId, answer) => {
           questionId,
           answer,
         });
-            console.log(response.data)
             return response.data
       } catch (error) {
         console.error("Error sending answer:", error);
